@@ -6,7 +6,7 @@
 
 #### Bibliotecas Utilizadas:
 * syncfusion_flutter_charts : Utilizada para geração dos gráficos.
-
+* flutter_launcher_icons:: Utilizada para gerar o icone do aplicativo.
 
 
 # Segue o gráfico base para a implementação:
