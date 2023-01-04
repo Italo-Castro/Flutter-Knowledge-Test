@@ -22,11 +22,12 @@ class _MyHomePageState extends State<_MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text(
           'SAO',
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: Colors.black, fontStyle: FontStyle.italic, fontSize: 24),
+              color: Colors.black54, fontStyle: FontStyle.italic, fontSize: 20),
         ),
         elevation: 0,
         backgroundColor: Colors.white70,
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<_MyHomePage> {
       body: SfCartesianChart(
         primaryXAxis: CategoryAxis(borderColor: Colors.red),
         // Chart title
-        title: ChartTitle(text: 'Previsto X Realizado'),
+        title: ChartTitle(text: 'Previsto X Realizado', textStyle: TextStyle(fontSize: 18)),
         // Enable legend
         legend: Legend(isVisible: true),
         // Enable tooltip
