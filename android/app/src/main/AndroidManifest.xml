@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.icc.flutter_knowledge_test">
    <application
-        android:label="flutter_knowledge_test"
-        android:name="Cel"
+        android:label='SAO'
+        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

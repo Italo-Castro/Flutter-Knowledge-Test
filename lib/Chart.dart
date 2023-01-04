@@ -23,13 +23,13 @@ class _MyHomePageState extends State<_MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Barbosa Mello Construtora ',
+          'SAO',
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: Colors.black, fontStyle: FontStyle.italic, fontSize: 22),
+              color: Colors.black, fontStyle: FontStyle.italic, fontSize: 24),
         ),
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white70,
       ),
       body: SfCartesianChart(
         primaryXAxis: CategoryAxis(borderColor: Colors.red),
@@ -38,21 +38,23 @@ class _MyHomePageState extends State<_MyHomePage> {
         // Enable legend
         legend: Legend(isVisible: true),
         // Enable tooltip
-        tooltipBehavior: TooltipBehavior(enable: true, elevation: 12),
+        tooltipBehavior:
+            TooltipBehavior(enable: true, elevation: 12, duration: 1),
         series: <ChartSeries<_Infections, String>>[
           LineSeries<_Infections, String>(
             animationDelay: 1,
             enableTooltip: true,
             width: 5,
-            legendItemText: 'Previsto ',
+            legendItemText: 'Previsto',
             name: 'Previsto',
             xValueMapper: (_Infections victims, _) => victims.year,
             yValueMapper: (_Infections victims, _) => victims.victims,
             dataSource: <_Infections>[
-              _Infections('ago/22', 95222.00),
+              _Infections('ago/22', 79640.00),
               _Infections('set/22', 101360.00),
-              _Infections('ou/22', 84157.00),
-              _Infections('nov/22', 35954.00),
+              _Infections('out/22', 74118.00),
+              _Infections('nov/22', 25723.06),
+              _Infections('dez/22', 5690.00),
             ],
             dataLabelSettings:
                 DataLabelSettings(isVisible: true, color: Colors.blue),
@@ -67,11 +69,11 @@ class _MyHomePageState extends State<_MyHomePage> {
             legendItemText: 'Realizado',
             name: 'Realizado',
             dataSource: <_Infections>[
-              _Infections('ago/22', 79640.00),
-              _Infections('ago/22', 79640.00),
+              _Infections('ago/22', 95222.00),
               _Infections('set/22', 75074.00),
-              _Infections('ou/22', 74118.00),
-              _Infections('nov/22', 25723.06),
+              _Infections('out/22', 84147.00),
+              _Infections('nov/22', 35954.00),
+              _Infections('dez/22', 3242.00),
             ],
             // Enable data label
             dataLabelSettings:
