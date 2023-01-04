@@ -5,8 +5,8 @@
 ## Desenvolvi este projeto com a finalidade de testar alguns conhecimentos em flutter.
 
 #### Bibliotecas Utilizadas:
-* syncfusion_flutter_charts : Utilizada para geração dos gráficos.
-* flutter_launcher_icons:: Utilizada para gerar o icone do aplicativo.
+* syncfusion_flutter_charts: Utilizada para geração dos gráficos.
+* flutter_launcher_icons: Utilizada para gerar o icone do aplicativo.
 
 
 # Segue o gráfico base para a implementação:
