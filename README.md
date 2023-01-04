@@ -12,5 +12,5 @@
 # Segue o gráfico base para a implementação:
 ![img.png](img.png)
 
-#Segue o gráfico implementado:
+# Segue a implementação do gráfico:
 ![img_1.png](img_1.png)
